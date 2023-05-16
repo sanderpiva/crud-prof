@@ -26,7 +26,7 @@
 
 				<div class="form-group col-md-6">
 					<label for="role">Cargo</label> <input type="text"
-						class="form-control" id="name" name="name" autofocus="autofocus"
+						class="form-control" id="role" name="role" autofocus="autofocus"
 						placeholder="Cargo ocupado" required
 						oninvalid="this.setCustomValidity('Por favor, informe o cargo ocupado.')"
 						oninput="setCustomValidity('')">
