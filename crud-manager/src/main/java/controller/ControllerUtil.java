@@ -1,6 +1,8 @@
 package controller;
 
 import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
@@ -46,5 +48,18 @@ public class ControllerUtil {
 			req.setAttribute("alertType", message);
 			req.getSession().removeAttribute("alertType");
 		}	
+	}
+
+	public static Date formatDate(String stringDate) {
+		// TODO Auto-generated method stub
+		SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+		
+		try {
+			return dateFormat.parse(stringDate);
+		} catch (Exception e) {
+			// TODO: handle exception
+			return null;
+		}
+		
 	}
 }
